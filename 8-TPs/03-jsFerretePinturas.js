@@ -4,10 +4,15 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 */
 function FahrenheitCentigrados () 
 {
+   gradosf = parseInt(document.getElementById("txtIdTemperatura").value)
+   gradosc = ((gradosf - 32) * 5/9).toFixed(2)
+   alert(gradosf + "° Fahrenheit son "+gradosc +"° grados celcius").toFixed(2)
 	
 }
 
 function CentigradosFahrenheit () 
 {
-	
+   gradosc = parseInt(document.getElementById("txtIdTemperatura").value)
+   gradosf = ((gradosc * 9/5) + 32).toFixed(2)
+   alert(gradosc + "° Celsius son "+ gradosf +"° grados Fahreinheit").toFixed(2)
 }
